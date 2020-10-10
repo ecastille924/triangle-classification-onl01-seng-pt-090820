@@ -2,6 +2,10 @@ class Triangle
   
   def initialize (s1, s2, s3)
     
+    if s1 <= 0 || s2 <= 0 ||s3 <= 0
+      raise TriangleError
+    end
+    
     if s1 == nil || s2 == nil ||s3 == nil
       raise TriangleError
     end
